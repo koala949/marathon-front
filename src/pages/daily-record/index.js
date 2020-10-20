@@ -15,7 +15,7 @@ export default function Event(props) {
   const [pageLoading, setPageLoading] = useState(true);
 
   useEffect(() => {
-    (async function(code) {
+    (async function() {
       if (code) {
         const { data } = await queryDailyStatus(code);
         if (data) {
@@ -47,7 +47,7 @@ export default function Event(props) {
 
   const onSubmit = async isHoliday => {
     setLoading(true);
-    if (code) {
+    if (!code) {
       Notification.error({
         message: '抱歉,找不到用户信息~',
         placement: 'bottomRight',
