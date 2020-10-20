@@ -21,6 +21,6 @@ export function createDailyRecord(options) {
 export function queryDailyStatus(code) {
   return noAuthAxios({
     method: 'get',
-    url: `/`,
+    url: `/daily/isUpdate?code=${code}`,
   });
 }
