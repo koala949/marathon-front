@@ -1,0 +1,46 @@
+.progress-bar {
+  width: 100%;
+}
+
+.percent {
+  margin-left: 30%;
+  font-size: 18px;
+  font-family: Montserrat-Regular, Montserrat;
+  font-weight: 400;
+  color: #252525;
+  line-height: 22px;
+}
+progress {
+  background: #ccc;
+  width: 100%;
+  height: 6px;
+  left: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+}
+/* 表示已完成进度背景色,仅兼容谷歌浏览器 */
+progress::-webkit-progress-value {
+  background: rgb(0, 118, 255);
+  height: 6px;
+  border-radius: 6px 0 0 6px;
+  position: absolute;
+  top: -1px;
+}
+/* 表示总任务的背景色 ，仅兼容谷歌浏览器 */
+progress::-webkit-progress-bar {
+  background: #ccc;
+}
+.progress-btn {
+  margin-left: 5px;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px 0 #000 0.27;
+  border-radius: 50%;
+  position: absolute;
+  top: 29px;
+  cursor: pointer;
+}

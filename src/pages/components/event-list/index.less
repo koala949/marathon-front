@@ -1,0 +1,42 @@
+.list-content {
+  padding: 0px 40px;
+  margin-top: 40px;
+
+  img {
+    cursor: pointer;
+  }
+  .list-title {
+    font-size: 22px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #252525;
+    line-height: 30px;
+    margin-right: 10px;
+  }
+
+  .event-card {
+    margin-top: 20px;
+    width: 100%;
+    :global {
+      .ant-input {
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 18px;
+        &::-webkit-scrollbar {
+          width: 4px;
+          background-color: #f7f7f7;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 2px;
+          background: #d7d8d9;
+        }
+      }
+    }
+
+    .delete-icon {
+      width: 32px;
+      margin-top: 5px;
+    }
+  }
+}
